@@ -212,6 +212,29 @@
 					"response": []
 				},
 				{
+					"name": "notifications.get (unread only)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/notifications.get?unread",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"notifications.get"
+							],
+							"query": [
+								{
+									"key": "unread",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "notifications.read",
 					"request": {
 						"method": "GET",
