@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "688fca12-c2aa-4989-b0b0-0699b8b300ad",
+		"_postman_id": "32df3177-0d12-4d13-89ef-65087d86ee31",
 		"name": "Dar.Finance (Test)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -149,6 +149,76 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "users.get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "v",
+								"value": "{{v}}",
+								"type": "text"
+							},
+							{
+								"key": "project",
+								"value": "{{project}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{host}}/users.get",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"users.get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users.update",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "notifications.get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "notifications.read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
 				}
 			]
 		}
@@ -185,6 +255,18 @@
 		{
 			"key": "project",
 			"value": "copybro"
+		},
+		{
+			"key": "token",
+			"value": "b8d4c01de8a941ef11ac934ea0117da4599ad02d"
+		},
+		{
+			"key": "phone",
+			"value": "79000000000"
+		},
+		{
+			"key": "code",
+			"value": "034847"
 		}
 	]
 }
